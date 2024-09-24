@@ -1,0 +1,5 @@
+steps:
+- mame: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/august-period-436600-n4/docker_app', '.']
+-name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '-t', 'gcr.io/august-period-436600-n4/docker_app']
